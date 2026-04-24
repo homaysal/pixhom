@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixhom - جایی که پیکسل‌ها خانه می‌سازند</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h1>pixhom</h1>
+                    <p>پیکسل‌ها خانه می‌سازند</p>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="all-portfolio.php">نمونه کارها</a></li>
+                    <li><a href="all-blog.php">بلاگ</a></li>
+                    <li><a href="all-media.php">گالری</a></li>
+                    <li><a href="#about">درباره</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">ساخت انجام‌شده‌ی خود را نشان دهید</h1>
+                <p class="hero-subtitle">قالب‌ها، پلاگین‌ها و پروژه‌های حرفه‌ای در یک جا</p>
+                <button class="btn btn-primary" onclick="location.href='#portfolio'">کاوش کنید</button>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">✨ pixhom ✨</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>نمونه کارها</h2>
+            <p>مجموعه‌ای از بهترین قالب‌ها، پلاگین‌ها و ابزارهای تخصصی</p>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">همه</button>
+                <button class="filter-btn" data-filter="template">قالب</button>
+                <button class="filter-btn" data-filter="plugin">پلاگین</button>
+                <button class="filter-btn" data-filter="tool">ابزار</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>آخرین مقالات</h2>
+            <p>نکات و راهنماهای مفید برای توسعه‌دهندگان</p>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>درباره pixhom</h2>
+            <p>pixhom جایی است که توسعه‌دهندگان و طراحان برای به اشتراک‌گذاری ساخت‌های خود دور هم می‌آیند. ما به اعتقاد داریم که هر پروژه یک داستان دارد و ما اینجا برای کمک به شما برای گفتن آن داستان هستیم.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>تماس با ما</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="نام شما" required>
+                <input type="email" placeholder="ایمیل" required>
+                <textarea placeholder="پیام خود را بنویسید..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">ارسال پیام</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 pixhom. تمام حقوق محفوظ است. | ساخته شده با ❤️ توسط توسعه‌دهندگان</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
